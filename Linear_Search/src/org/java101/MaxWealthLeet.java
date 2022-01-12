@@ -1,6 +1,6 @@
 package org.java101;
 
-public class MaxWealth {
+public class MaxWealthLeet {
     // https://leetcode.com/problems/richest-customer-wealth/
     public static void main(String[] args) {
         int[][] accounts = {{1,5},{3,7}, {3,5}};
