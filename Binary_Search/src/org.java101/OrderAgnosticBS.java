@@ -1,5 +1,3 @@
-package org.java101;
-
 public class OrderAgnosticBS {
     public static void main(String[] args) {
         int[] nums = {22,21,18,15,10,8,3};

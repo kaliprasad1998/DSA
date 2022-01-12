@@ -1,6 +1,6 @@
 package org.java101;
 
-public class Main {
+public class LinearSearch {
 
   public static void main(String[] args) {
     int[] nums = {2, 5, 17, 54, 33, 68, 94};
