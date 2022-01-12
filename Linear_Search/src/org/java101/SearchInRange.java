@@ -1,3 +1,5 @@
+package org.java101;
+
 public class SearchInRange {
 
   public static void main(String[] args) {

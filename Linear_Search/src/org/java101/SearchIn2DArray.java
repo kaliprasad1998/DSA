@@ -1,3 +1,5 @@
+package org.java101;
+
 import java.util.Arrays;
 
 public class SearchIn2DArray {
