@@ -16,7 +16,7 @@ public class OrderAgnosticBS {
 
         boolean isAscending = arr[start] < arr[end];
 
-        while (start < end) {
+        while (start <= end) {
             // int mid = (start + end)/2
             // if start and end are very big then start + end may result a no greater than range of int
 

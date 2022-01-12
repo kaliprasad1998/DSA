@@ -12,7 +12,7 @@ public class BinarySearch {
         int end = arr.length - 1;
 
         // Assumed array is sorted in ascending order
-        while (start < end) {
+        while (start <= end) {
             // int mid = (start + end)/2
             // if start and end are very big then start + end may result a no greater than range of int
 
