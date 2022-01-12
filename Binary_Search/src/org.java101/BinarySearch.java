@@ -1,3 +1,5 @@
+package org.java101;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int[] nums = {2, 8, 16, 28, 44, 57, 59, 74, 83};
