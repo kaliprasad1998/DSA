@@ -3,8 +3,11 @@ package org.java101;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] nums = {2, 8, 16, 28, 44, 57, 59, 74, 83};
+        int[] nums2 = {5,7,7,8,8,10};
         int out = binarySearch(nums, 16);
+        int out2 = binarySearch(nums2,8);
         System.out.println(out);
+        System.out.println(out2);
     }
 
     static int binarySearch(int[] arr, int target) {
