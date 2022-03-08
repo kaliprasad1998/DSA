@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 // https://leetcode.com/problems/contains-duplicate/
-class ContainsDuplicate {
+class ContainsDuplicate_Leet {
     public static void main(String[] args) {
         int[] arr = {1,2,3,1};
         System.out.println(containsDuplicate1(arr));
