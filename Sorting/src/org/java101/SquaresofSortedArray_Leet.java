@@ -3,7 +3,7 @@ package org.java101;
 import java.util.Arrays;
 
 // https://leetcode.com/problems/squares-of-a-sorted-array/
-class SquaresofSortedArray {
+class SquaresofSortedArray_Leet {
 
     public static void main(String[] args) {
         int[] nums = {-4,-1,0,3,10};
