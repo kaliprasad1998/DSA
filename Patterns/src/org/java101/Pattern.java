@@ -9,7 +9,8 @@ public class Pattern {
 //        pattern5(5);
 //        pattern6(5);
 //        pattern7(5);
-        pattern8(5);
+//        pattern8(5);
+        pattern9(5);
     }
 
     public static void pattern1(int n) {
@@ -98,6 +99,20 @@ public class Pattern {
                 System.out.print(" ");
             }
             int noOfStars = 2 * i - 1;
+            for (int j = 0; j < noOfStars; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern9 (int n) {
+        for (int i = 1; i <= 5; i++) {
+            int noOfSpaces = i - 1;
+            for (int j = 0; j < noOfSpaces; j++) {
+                System.out.print(" ");
+            }
+            int noOfStars = 2 * (n - i) + 1;
             for (int j = 0; j < noOfStars; j++) {
                 System.out.print("*");
             }
