@@ -12,7 +12,8 @@ public class patterns2 {
 //        pattern20(5);
 //        pattern21(5);
 //        pattern22(5);
-        pattern23(3);
+//        pattern23(3);
+        pattern24(7);
     }
 
     public static void pattern13(int n) {
@@ -253,6 +254,32 @@ public class patterns2 {
             for (int j = 0; j < secondFourthStars; j++) {
                 System.out.print("*");
             }
+            System.out.println();
+        }
+    }
+
+    public static void pattern24 (int n) {
+        for (int i = 1 ; i <= 2 * n ; i++) {
+            System.out.print("*");
+            int noOfFirstSpaces = i <= n ? i - 2 : 2 * n - i - 1;
+            for (int j = 0; j < noOfFirstSpaces; j++) {
+                System.out.print(" ");
+            }
+            int noOfSecondThirdStars = i != 1 && i != 2 * n ? 1 : 0;
+            for (int j = 0; j < noOfSecondThirdStars; j++) {
+                System.out.print("*");
+            }
+            int noOfSecondSpaces = i <= n ? 2 * (n - i) : 2 * (i - n - 1);
+            for (int j = 0; j < noOfSecondSpaces; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < noOfSecondThirdStars; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < noOfFirstSpaces; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
             System.out.println();
         }
     }
