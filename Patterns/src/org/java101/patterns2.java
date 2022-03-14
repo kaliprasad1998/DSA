@@ -5,7 +5,8 @@ public class patterns2 {
 //        pattern13(5);
 //        pattern14(5);
 //        pattern15(5);
-        pattern16(5);
+//        pattern16(5);
+        pattern17(4);
     }
     
     public static void pattern13 (int n) {
@@ -114,5 +115,23 @@ public class patterns2 {
             }
         }
         return product;
+    }
+
+    public static void pattern17 (int n) {
+        for (int i = 1; i <= 2 * n - 1 ; i++) {
+            int noOfSpaces = i <= 4 ? n - i : i - n;
+            for (int j = 0; j < noOfSpaces; j++) {
+                System.out.print(" ");
+            }
+            int noOfFirstNums = i <= 4 ? i : 2 * n - i;
+            for (int j = noOfFirstNums; j >= 1  ; j--) {
+                System.out.print(j);
+            }
+            int secondNums = i <= 4 ? i + 1 : 2 * n - i + 1;
+            for (int j = 2; j < secondNums  ; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
     }
 }
