@@ -6,7 +6,8 @@ public class patterns3 {
 //        pattern26(7);
 //        pattern27(4);
 //        pattern28(5);
-        pattern29(4);
+//        pattern29(4);
+        pattern30(6);
     }
     
     public static void pattern25(int n) {
@@ -98,6 +99,27 @@ public class patterns3 {
             }
             for (int j = 0; j < noOfStars; j++) {
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern30 (int n) {
+        for (int i = 1; i <= n ; i++) {
+            int noOfSpaces = 2 * (n - i);
+            for (int j = 0; j < noOfSpaces; j++) {
+                System.out.print(" ");
+            }
+            int num = i;
+            for (int j = 0; j < i; j++) {
+                System.out.print(num + " ");
+                num--;
+            }
+            int noOfNums = i - 1;
+            int startNum = 2;
+            for (int j = 0; j < noOfNums; j++) {
+                System.out.print(startNum + " ");
+                startNum++;
             }
             System.out.println();
         }
