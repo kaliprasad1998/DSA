@@ -10,7 +10,8 @@ public class patterns2 {
 //        pattern18(5);
 //        pattern19(5);
 //        pattern20(5);
-        pattern21(5);
+//        pattern21(5);
+        pattern22(5);
     }
 
     public static void pattern13(int n) {
@@ -198,5 +199,23 @@ public class patterns2 {
             }
             System.out.println();
         }
+    }
+
+    public static void pattern22 (int n) {
+        for (int i = 1 ; i <= n ; i++) {
+            int value = i % 2;
+            for (int j = 0; j < i; j++) {
+                System.out.print(value + " ");
+                value = reverseValue(value);
+            }
+            System.out.println();
+        }
+    }
+
+    private static int reverseValue(int i) {
+        if(i == 0) {
+            return 1;
+        }
+        return 0;
     }
 }
