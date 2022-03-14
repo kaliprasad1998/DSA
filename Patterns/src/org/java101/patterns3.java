@@ -8,12 +8,11 @@ public class patterns3 {
 //        pattern28(5);
 //        pattern29(4);
 //        pattern30(6);
-//        char c = 65;
-//        System.out.println(c);
+//        pattern31(4);
 //        pattern32(7);
 //        pattern33(5);
 //        pattern34(8);
-        pattern35(4);
+//        pattern35(6);
     }
 
     public static void pattern25(int n) {
@@ -131,10 +130,14 @@ public class patterns3 {
         }
     }
 
-    // TODO: Learn and complete it
     public static void pattern31(int n) {
+        int num = n + 1;
         for (int i = 1; i <= 2 * n - 1; i++) {
-
+            for (int j = 1; j <= 2 * n - 1; j++) {
+                int x = num - Math.min( Math.min (i, j), Math.min( 2 * n - i, 2 * n - j ));
+                System.out.print(x + " ");
+            }
+            System.out.println();
         }
     }
 
