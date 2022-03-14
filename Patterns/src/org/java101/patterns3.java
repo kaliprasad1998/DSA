@@ -3,7 +3,8 @@ package org.java101;
 public class patterns3 {
     public static void main(String[] args) {
 //        pattern25(6);
-        pattern26(7);
+//        pattern26(7);
+        pattern27(4);
     }
     
     public static void pattern25(int n) {
@@ -35,6 +36,36 @@ public class patterns3 {
                 System.out.print(i + " ");
             }
             count--;
+            System.out.println();
+        }
+    }
+
+    public static void pattern27 (int n) {
+        int start = 1;
+        int max = n * (n + 1);
+        for (int i = 1; i <= n ; i++) {
+            int noOfSpaces = 2 * i - 1;
+            for (int j = 0; j < noOfSpaces; j++) {
+                System.out.print(" ");
+            }
+            int noOfNums = n - i + 1;
+            for (int j = 0; j < noOfNums; j++) {
+                System.out.print(start + " ");
+                start++;
+            }
+            int spaces2 = i != n ? 1 : 0;
+//            int spaces2 = i != n ? 2 : 0; // experiment for higher values of n
+            for (int j = 0; j < spaces2; j++) {
+                System.out.print(" ");
+            }
+//            System.out.print(" ");
+
+            int num = max - noOfNums + 1 ;
+            for (int j = noOfNums; j >= 1 ; j--) {
+                System.out.print(num + " ");
+                num++;
+            }
+            max = max - noOfNums;
             System.out.println();
         }
     }
