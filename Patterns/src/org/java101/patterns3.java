@@ -10,7 +10,8 @@ public class patterns3 {
 //        pattern30(6);
 //        char c = 65;
 //        System.out.println(c);
-        pattern32(7);
+//        pattern32(7);
+        pattern33(5);
     }
 
     public static void pattern25(int n) {
@@ -142,6 +143,21 @@ public class patterns3 {
             for (int j = 0; j < i; j++) {
                 System.out.print(c + " ");
                 c++;
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern33 (int n) {
+        int start = 97;
+        for (int i = 1; i <= n ; i++) {
+            for (int j = 0; j < i; j++) {
+                if (start % 2 == 0) {
+                    System.out.print((char) (start - 32 ) + " ");
+                } else {
+                    System.out.print((char) start + " ");
+                }
+                start++;
             }
             System.out.println();
         }
