@@ -7,7 +7,8 @@ public class patterns2 {
 //        pattern15(5);
 //        pattern16(5);
 //        pattern17(4);
-        pattern18(5);
+//        pattern18(5);
+        pattern19(5);
     }
 
     public static void pattern13(int n) {
@@ -144,6 +145,23 @@ public class patterns2 {
             for (int j = 0; j < stars; j++) {
                 System.out.print("*");
             }
+            for (int j = 0; j < spaces; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < stars; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern19 (int n) {
+        for (int i = 1; i <= 2 * n - 1 ; i++) {
+            int stars = i <= 5 ? i : 2 * n - i;
+            for (int j = 0; j < stars; j++) {
+                System.out.print("*");
+            }
+            int spaces = 2 * Math.abs(n - i);
             for (int j = 0; j < spaces; j++) {
                 System.out.print(" ");
             }
