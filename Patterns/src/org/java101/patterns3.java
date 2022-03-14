@@ -13,6 +13,7 @@ public class patterns3 {
 //        pattern32(7);
 //        pattern33(5);
 //        pattern34(8);
+        pattern35(4);
     }
 
     public static void pattern25(int n) {
@@ -149,12 +150,12 @@ public class patterns3 {
         }
     }
 
-    public static void pattern33 (int n) {
+    public static void pattern33(int n) {
         int start = 97;
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             for (int j = 0; j < i; j++) {
                 if (start % 2 == 0) {
-                    System.out.print((char) (start - 32 ) + " ");
+                    System.out.print((char) (start - 32) + " ");
                 } else {
                     System.out.print((char) start + " ");
                 }
@@ -164,12 +165,32 @@ public class patterns3 {
         }
     }
 
-    public static void pattern34 (int n) {
-        for (int i = 0; i < n ; i++) {
+    public static void pattern34(int n) {
+        for (int i = 0; i < n; i++) {
             int num = 64 + n - i;
             for (int j = 0; j < n - i; j++) {
                 System.out.print((char) num + " ");
                 num--;
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern35(int n) {
+        for (int i = 1; i <= n; i++) {
+            int start = 1;
+            for (int j = 0; j < i; j++) {
+                System.out.print(start);
+                start++;
+            }
+            int noOfSpaces = 2 * (n - i);
+            for (int j = 0; j < noOfSpaces; j++) {
+                System.out.print(" ");
+            }
+            int last = i;
+            for (int j = 0; j < i; j++) {
+                System.out.print(last);
+                last--;
             }
             System.out.println();
         }
