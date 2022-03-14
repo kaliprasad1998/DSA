@@ -2,7 +2,8 @@ package org.java101;
 
 public class patterns3 {
     public static void main(String[] args) {
-        pattern25(6);
+//        pattern25(6);
+        pattern26(7);
     }
     
     public static void pattern25(int n) {
@@ -23,6 +24,17 @@ public class patterns3 {
             for (int j = 0; j < noOfSecondStars; j++) {
                 System.out.print("*");
             }
+            System.out.println();
+        }
+    }
+
+    public static void pattern26 (int n) {
+        int count = n;
+        for (int i = 1; i <= n ; i++) {
+            for (int j = 0; j < count; j++) {
+                System.out.print(i + " ");
+            }
+            count--;
             System.out.println();
         }
     }
