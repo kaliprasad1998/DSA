@@ -11,7 +11,8 @@ public class patterns2 {
 //        pattern19(5);
 //        pattern20(5);
 //        pattern21(5);
-        pattern22(5);
+//        pattern22(5);
+        pattern23(3);
     }
 
     public static void pattern13(int n) {
@@ -217,5 +218,42 @@ public class patterns2 {
             return 1;
         }
         return 0;
+    }
+
+    // TODO: Correct this pattern
+    public static void pattern23 (int n) {
+        for (int i = 1; i <= n ; i++) {
+            int firstThirdSpaces = 2 * (n - i) - 1;
+            if (firstThirdSpaces < 0) {
+                firstThirdSpaces = 0;
+            }
+            for (int j = 0; j < firstThirdSpaces; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
+            int secondFourthSpaces = 2 * i - 3;
+            if (secondFourthSpaces < 0) {
+                secondFourthSpaces = 0;
+            }
+            for (int j = 0; j < secondFourthSpaces; j++) {
+                System.out.print(" ");
+            }
+            int secondFourthStars = i != 1 && i != n ? 1 : 0;
+            for (int j = 0; j < secondFourthStars; j++) {
+                System.out.print("*");
+            }
+
+            for (int j = 0; j < firstThirdSpaces; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
+            for (int j = 0; j < secondFourthSpaces; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < secondFourthStars; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
