@@ -1,6 +1,6 @@
 package org.java101;
 
-https://leetcode.com/problems/defanging-an-ip-address/
+// https://leetcode.com/problems/defanging-an-ip-address/
 class IPAddress_Leet {
     public static void main(String[] args) {
         String s = "1.1.1.1";
