@@ -1,7 +1,7 @@
 package org.java101;
 
 // https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
-class StringsEquall {
+class StringsEqual_Leet {
     public static void main(String[] args) {
         String[] word1 = {"ab", "c"};
         String[] word2 = {"a", "bc"};
