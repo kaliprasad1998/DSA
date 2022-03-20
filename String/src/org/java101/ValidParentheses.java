@@ -3,7 +3,7 @@ package org.java101;
 import java.util.Stack;
 
 // https://leetcode.com/problems/valid-parentheses/
-class ValidParentheses {
+class ValidParentheses_Leet {
     public static void main(String[] args) {
         String input = "([}}])";
         boolean out = isValid(input);
