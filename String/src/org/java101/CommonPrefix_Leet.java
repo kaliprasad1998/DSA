@@ -1,7 +1,7 @@
 package org.java101;
 
 // https://leetcode.com/problems/longest-common-prefix/
-class CommonPrefix {
+class CommonPrefix_Leet {
     public static void main(String[] args) {
 
         String[] strs = {"cir", "ca", "car"};
